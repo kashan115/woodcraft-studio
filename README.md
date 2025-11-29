@@ -126,6 +126,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Lovable Project**: https://lovable.dev/projects/5f2b0512-ea26-466c-ab0b-28e0258f9459
-
 Made with ❤️ for woodworkers everywhere

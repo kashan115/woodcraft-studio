@@ -1,8 +1,9 @@
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Grid, Environment, PerspectiveCamera, OrthographicCamera } from '@react-three/drei';
+import { OrbitControls, Grid, Environment, PerspectiveCamera } from '@react-three/drei';
 import { useProjectStore } from '@/store/projectStore';
 import { LumberPiece3D } from './LumberPiece3D';
-import { Suspense } from 'react';
+import { SnapIndicator } from './SnapIndicator';
+import { Suspense, useEffect, useRef } from 'react';
 
 const Scene = () => {
   const { pieces, selectPiece, viewMode } = useProjectStore();
@@ -62,6 +63,9 @@ const Scene = () => {
       {pieces.map((piece) => (
         <LumberPiece3D key={piece.id} piece={piece} />
       ))}
+
+      {/* Snap indicators */}
+      <SnapIndicator />
 
       {/* Axes helper */}
       <axesHelper args={[5]} />

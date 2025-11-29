@@ -1,13 +1,16 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { WoodworkEditor } from '@/components/woodwork/WoodworkEditor';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>WoodCraft Studio - Free Open Source Woodworking Project Planner</title>
+        <meta name="description" content="Design furniture and woodworking projects with our free 3D planner. Drag and drop lumber pieces, generate cut lists, and plan your builds like a pro." />
+        <meta name="keywords" content="woodworking, furniture design, 3D planner, cut list, DIY, lumber calculator, project planner" />
+      </Helmet>
+      <WoodworkEditor />
+    </>
   );
 };
 

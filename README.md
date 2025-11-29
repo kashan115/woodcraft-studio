@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome My Free Wood Working Project
 
 ## Project info
 

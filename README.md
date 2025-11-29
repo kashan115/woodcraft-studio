@@ -1,73 +1,131 @@
-# Welcome My Free Wood Working Project
+# 🪵 WoodCraft Studio
 
-## Project info
+A powerful, open-source 3D woodworking project planner built with React, Three.js, and modern web technologies. Design furniture, generate cut lists, and visualize your projects before cutting a single board.
 
-**URL**: https://lovable.dev/projects/5f2b0512-ea26-466c-ab0b-28e0258f9459
+![WoodCraft Studio](https://img.shields.io/badge/License-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react)
+![Three.js](https://img.shields.io/badge/Three.js-r160-black?logo=three.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+### 🏗️ 3D Design Environment
+- Real-time 3D visualization with orbit controls
+- Transform gizmos for intuitive manipulation (move, rotate, scale)
+- Multiple view modes (3D, Top, Front, Side)
+- Grid snapping for precise placement
+- Snap indicators between pieces
 
-**Use Lovable**
+### 🪵 Lumber Library
+- **Dimensional Lumber**: 2×4, 2×6, 2×8, 2×10, 2×12, 4×4, 1×4, 1×6
+- **Plywood**: 1/4", 1/2", 3/4" sheets
+- **Hardwoods**: Oak, Walnut, Maple boards
+- Accurate actual vs nominal dimensions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5f2b0512-ea26-466c-ab0b-28e0258f9459) and start prompting.
+### 📋 Templates
+Pre-built furniture templates to jumpstart your projects:
+- **Tables**: Simple table, Dining table
+- **Seating**: Basic chair, Adirondack chair, Garden bench
+- **Storage**: Bookshelf, Base cabinet, Wardrobe
+- **Bedroom**: Platform bed, Bed with headboard, Nightstand
+- **Workbenches**: Heavy workbench, Miter saw station
 
-Changes made via Lovable will be committed automatically to this repo.
+### 📐 Cut List Generation
+- Automatic cut list from your design
+- Group by lumber type and length
+- Export to CSV for shop use
 
-**Use your preferred IDE**
+### ⌨️ Keyboard Shortcuts
+| Key | Action |
+|-----|--------|
+| `V` | Select tool |
+| `G` | Move tool |
+| `R` | Rotate tool |
+| `S` | Scale tool |
+| `M` | Measure tool |
+| `D` | Toggle dimensions |
+| `Delete` | Delete selected |
+| `Ctrl+D` | Duplicate |
+| `Ctrl+G` | Toggle grid snap |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Quick Start
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
+- Node.js 18+
+- npm or bun
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+git clone https://github.com/kashan115/woodcraft-studio.git
+cd woodcraft-studio
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:5173](http://localhost:5173) to start designing!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Tech Stack
 
-**Use GitHub Codespaces**
+- **Framework**: React 18 with TypeScript
+- **3D Graphics**: Three.js + React Three Fiber + Drei
+- **State Management**: Zustand
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Build Tool**: Vite
+- **Icons**: Lucide React
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/
+│   ├── ui/              # shadcn/ui components
+│   └── woodwork/        # App-specific components
+├── store/               # Zustand state management
+├── hooks/               # Custom React hooks
+├── pages/               # Route pages
+└── lib/                 # Utility functions
+```
 
-This project is built with:
+## 🤝 Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## How can I deploy this project?
+### Ways to Contribute
+- 🐛 Report bugs
+- 💡 Suggest features
+- 📝 Improve documentation
+- 🔧 Submit pull requests
+- 🪵 Add furniture templates
 
-Simply open [Lovable](https://lovable.dev/projects/5f2b0512-ea26-466c-ab0b-28e0258f9459) and click on Share -> Publish.
+## 📜 License
 
-## Can I connect a custom domain to my Lovable project?
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Yes, you can!
+## 🙏 Acknowledgments
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) - React renderer for Three.js
+- [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
+- [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
+- [Lucide](https://lucide.dev/) - Beautiful icons
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🗺️ Roadmap
+
+- [ ] Undo/Redo system
+- [ ] Project save/load (local storage)
+- [ ] PDF export with cut diagrams
+- [ ] Joinery visualization (mortise & tenon, dovetails)
+- [ ] Material cost calculator
+- [ ] Wood grain textures
+- [ ] Assembly instructions generator
+
+---
+
+**Lovable Project**: https://lovable.dev/projects/5f2b0512-ea26-466c-ab0b-28e0258f9459
+
+Made with ❤️ for woodworkers everywhere
